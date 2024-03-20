@@ -1,104 +1,149 @@
-/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+/* Navbar CSS */
 
-#hero-section {
-  background: center/cover url("img/hero.jpg");
-  width: 100%;
-  padding: 20%;
-  color: #EEF5FF;
-  text-shadow: 2px 2px 5px rgb(80, 0, 0);
-  object-fit: cover;
-  object-position: center;
+.navbar {
+  background-color: #000814;
 }
 
-#hero-section img {
-  display: block;
-  margin: auto;
+.navbar .nav-link {
+  color: #FFC300;
+}
+
+.navbar-toggler {
+  background-color: #FFC300;
+}
+
+/* Background Video Section CSS */
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero-Section CSS */
+
+.hero-section {
+  color: #FFC300;
+  text-shadow: 2px 2px 5px rgb(80, 0, 0);
+}
+
+.hero-section img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #EEF5FF;
+  border: 5px solid #000814;
+  margin: auto;
+  margin-top: 200px;
+  display: block;
   object-fit: cover;
   object-position: center;
 }
 
-.navbar-custom {
-  background-color: #176B87;
-  text-align: right;
-}
+/* Mission-Section CSS */
 
-.navbar-custom .navbar-text {
-  color: #EEF5FF;
-}
-
-#footer-section {
-  background-color: black;
-  color: #EEF5FF;
-  text-align: center;
+.mission-section {
+  font-size: 20px;
   padding: 5%;
+  margin-top: 15%;
+  color: #FFD60A;
+  background-color: #001D3D;
 }
 
-#footer-section p {
+.mission-section img {
+  width: 100%;
+  height: 300px;
   display: block;
-  margin: auto;
+  object-fit: cover;
+  object-position: center;  
 }
 
-#mission-section {
-  background-color: #176B87;
-  color: #EEF5FF;
+
+.mission-section p {
+  margin-top: 13%;
+}
+
+/* Skills-Section CSS */
+
+.skills-section {
+  padding: 5%;
+  color: #FFD60A;
+  background-color: #003566; 
+}
+
+.skills-section img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 20px auto 20px auto;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  object-fit: cover;
+  object-position: center;
+}
+
+.skills-section img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.skills-section p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  display: inline-block;
+} 
+
+.skills:hover p {
+  opacity: 1;
+}
+
+/* Contact-Section CSS */
+
+.contact-section {
+  background-color: #001D3D;
+  color: #FFD60A;
   padding: 5%;
 }
+
+.contact-section a {
+  font-size: 50px;
+  margin-bottom: 30px;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.contact-section a:hover {
+  color: #FFD60A;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* Footer-Section CSS */
+
+.footer-section {
+  background-color: #000814;
+  color: #FFD60A;
+  padding: 5%;
+}
+
+/* General CSS */
 
 h3 {
   margin-bottom: 50px;
 }
-
-#mission-section img {
-  display: block;
-  width: 100%;
-  height: 300px;
-  margin-bottom: 50px;
-  object-fit: cover;
-  object-position: center;
-}
-
-#skills-section {
-  background-color: #86B6F6;
-  color: black;
-  padding: 5%;
-}
-
-#skills-section img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 40%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-#skils-section p {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: black;
-}
-
-#contact-section {
-  background-color: #176B87;
-  color: #EEF5FF;
-  padding: 5%;
-}
-
-#contact-section a {
-  font-size: 30px;
-  color: #EEF5FF;
-}
-
-#contact-section a:hover {
-  color: black;
-}
-
 
 
 
